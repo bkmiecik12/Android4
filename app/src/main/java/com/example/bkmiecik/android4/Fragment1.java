@@ -27,8 +27,10 @@ public class Fragment1 extends Fragment implements RadioGroup.OnCheckedChangeLis
         switch (checkedId) {
             case R.id.opcja1:
                 sluchaczF1.onWyborOpcji(1);
+                break;
             case R.id.opcja2:
                 sluchaczF1.onWyborOpcji(2);
+                break;
         }
     }
 
@@ -56,7 +58,7 @@ public class Fragment1 extends Fragment implements RadioGroup.OnCheckedChangeLis
 
     @Override
     public void onAttach(Context context) {
-        super.onAttach(context);
+
         try {
             A1 = (AppCompatActivity) context;
             sluchaczF1 = (OnWyborOpcjiListener) context;
@@ -64,5 +66,6 @@ public class Fragment1 extends Fragment implements RadioGroup.OnCheckedChangeLis
             throw new ClassCastException(A1.toString() +
                     " musi implementować OnWyborOpcjiListener");
         }
+        super.onAttach(context);
     }
 }
