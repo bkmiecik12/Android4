@@ -4,12 +4,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
         tools:context="com.example.bkmiecik.android4.Fragment11">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fragment11"/>
+            android:text="Fragment11"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textColor="#999999"/>
+
+    <RatingBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+    android:layout_gravity="center"/>
 
 </LinearLayout>
